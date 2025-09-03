@@ -48,7 +48,7 @@ export default function GarageMicrosite() {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 p-6 md:p-10">
           <div>
             <h2 className="text-3xl md:text-4xl font-extrabold text-blue-700">
-              Book your MOT or service in minutes
+              Book your MOT or SERVICE in minutes
             </h2>
             <p className="mt-4 text-sm text-gray-700">
               Local family-run garage in Chesham offering MOT testing, servicing, diagnostics & tyres.
