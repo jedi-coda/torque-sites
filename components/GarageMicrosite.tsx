@@ -84,6 +84,42 @@ export default function GarageMicrosite() {
         </div>
       </section>
 
+{/* Services */}
+<section className="bg-white">
+  <div className="max-w-6xl mx-auto p-6 md:p-10">
+    <h3 className="text-xl font-semibold mb-4 text-blue-700">Our services</h3>
+    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="p-4 rounded-xl border shadow-sm bg-gray-50">
+        <div className="text-sm font-medium text-blue-700">MOT</div>
+        <p className="text-sm text-gray-600 mt-1">Class 4 MOT testing while-you-wait.</p>
+      </div>
+      <div className="p-4 rounded-xl border shadow-sm bg-gray-50">
+        <div className="text-sm font-medium text-blue-700">SERVICE</div>
+        <p className="text-sm text-gray-600 mt-1">Interim & full servicing for all makes.</p>
+      </div>
+      <div className="p-4 rounded-xl border shadow-sm bg-gray-50">
+        <div className="text-sm font-medium text-blue-700">DIAGNOSTICS</div>
+        <p className="text-sm text-gray-600 mt-1">Warning lights, fault finding & repairs.</p>
+      </div>
+      <div className="p-4 rounded-xl border shadow-sm bg-gray-50">
+        <div className="text-sm font-medium text-blue-700">TYRES</div>
+        <p className="text-sm text-gray-600 mt-1">Supply, fit & balancing.</p>
+      </div>
+    </div>
+
+    {/* Optional: quick CTA under the grid */}
+    <div className="mt-6 flex gap-3">
+      <a href="#booking" className="px-4 py-2 bg-blue-500 text-white rounded-xl shadow">
+        Book now
+      </a>
+      <a href="tel:01494772277" className="px-4 py-2 border border-blue-500 text-blue-700 rounded-xl">
+        Call 01494 772277
+      </a>
+    </div>
+  </div>
+</section>
+
+
       {/* Find us */}
       <section className="bg-white p-6 md:p-10">
         <h3 className="text-xl font-semibold mb-4 text-blue-700">Find us</h3>
