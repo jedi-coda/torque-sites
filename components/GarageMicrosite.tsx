@@ -1,7 +1,7 @@
 'use client';
 
 function mailtoBooking(fd: FormData) {
-  const to = "service@newtowngaragechesham.co.uk"; // placeholder email, replace with their real one if you get it
+  const to = "za.akhtar@gmail.com"; // Temporary for testing
   const subject = "Booking request via demo microsite";
   const body = `Hi Newtown Garage,
 
@@ -25,18 +25,18 @@ export default function GarageMicrosite() {
   return (
     <main className="min-h-screen font-sans bg-white text-gray-900">
       {/* Sticky header */}
-      <header className="sticky top-0 z-50 bg-yellow-500 text-black">
+      <header className="sticky top-0 z-50 bg-blue-600 text-white shadow">
         <div className="max-w-6xl mx-auto flex items-center justify-between p-4">
           <div className="flex items-center gap-3">
-            <div className="size-9 rounded-xl bg-black/90 text-white grid place-items-center font-bold">NG</div>
+            <div className="size-9 rounded-xl bg-white text-blue-700 grid place-items-center font-bold">NG</div>
             <h1 className="text-lg font-bold leading-tight">Newtown Garage</h1>
-            <p className="text-sm text-gray-800">Chesham · MOT · Servicing · Diagnostics · Tyres</p>
+            <p className="text-sm opacity-80">Chesham · MOT · Servicing · Diagnostics · Tyres</p>
           </div>
           <div className="flex gap-2">
-            <a href="tel:01494772277" className="px-3 py-2 bg-black text-white rounded-xl font-medium shadow">
+            <a href="tel:01494772277" className="px-3 py-2 bg-white text-blue-700 rounded-xl font-medium shadow">
               Call: 01494 772277
             </a>
-            <a href="#booking" className="px-3 py-2 border border-black rounded-xl font-medium">
+            <a href="#booking" className="px-3 py-2 border border-white rounded-xl font-medium">
               Book MOT
             </a>
           </div>
@@ -47,7 +47,9 @@ export default function GarageMicrosite() {
       <section className="bg-gray-100">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 p-6 md:p-10">
           <div>
-            <h2 className="text-3xl md:text-4xl font-extrabold">Book your MOT or service in minutes</h2>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-blue-700">
+              Book your MOT or service in minutes
+            </h2>
             <p className="mt-4 text-sm text-gray-700">
               Local family-run garage in Chesham offering MOT testing, servicing, diagnostics & tyres.
             </p>
@@ -60,7 +62,7 @@ export default function GarageMicrosite() {
 
           {/* Booking form */}
           <div id="booking" className="bg-white p-6 rounded-xl shadow">
-            <h3 className="text-lg font-semibold mb-4">Quick booking</h3>
+            <h3 className="text-lg font-semibold mb-4 text-blue-700">Quick booking</h3>
             <form action={mailtoBooking} className="space-y-3">
               <input name="name" placeholder="Your name" className="w-full p-2 border rounded" required />
               <input name="phone" placeholder="Phone" className="w-full p-2 border rounded" required />
@@ -73,7 +75,7 @@ export default function GarageMicrosite() {
               </select>
               <input name="when" placeholder="Preferred date/time (optional)" className="w-full p-2 border rounded" />
               <textarea name="notes" placeholder="Notes (optional)" className="w-full p-2 border rounded" />
-              <button type="submit" className="w-full bg-yellow-500 text-black p-2 rounded font-medium shadow">
+              <button type="submit" className="w-full bg-blue-500 text-white p-2 rounded font-medium shadow">
                 Send booking by email
               </button>
               <p className="text-xs text-gray-600 mt-2">Or call: 01494 772277</p>
@@ -84,7 +86,7 @@ export default function GarageMicrosite() {
 
       {/* Find us */}
       <section className="bg-white p-6 md:p-10">
-        <h3 className="text-xl font-semibold mb-4">Find us</h3>
+        <h3 className="text-xl font-semibold mb-4 text-blue-700">Find us</h3>
         <div className="grid md:grid-cols-2 gap-6">
           <div className="p-4 border rounded-xl shadow">
             <h4 className="font-medium">Newtown Garage (Chesham)</h4>
@@ -92,7 +94,7 @@ export default function GarageMicrosite() {
             <p>Mon–Fri: 08:00–17:30</p>
             <p>Sat: 08:00–13:00</p>
             <p>Sun: Closed</p>
-            <a href="tel:01494772277" className="block mt-2 px-3 py-2 bg-yellow-500 text-black rounded-xl shadow">
+            <a href="tel:01494772277" className="block mt-2 px-3 py-2 bg-blue-500 text-white rounded-xl shadow">
               Call 01494 772277
             </a>
           </div>
@@ -109,4 +111,5 @@ export default function GarageMicrosite() {
     </main>
   );
 }
+
 
